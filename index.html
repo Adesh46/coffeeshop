@@ -6,6 +6,7 @@
 <link rel="icon" href="logowedit.png">
 <style>
     body{
+        background-image: ;
         
         background-size: cover;
         background-repeat: no-repeat;
@@ -14,7 +15,7 @@
         
     }
     header{
-        border: solid #D6A062 3px;
+        border: solid #0c0c0c 3px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -52,11 +53,13 @@
         background-position: center;
         justify-content: flex-start;
         display: flex;
+        background-attachment: fixed;
         font-family: 'Times New Roman', Times, serif;
         
 
     }
     #second{
+        background-image: url(https://cdn.pixabay.com/photo/2014/05/08/22/31/cement-340454_1280.jpg);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -86,6 +89,7 @@
         height: 500px;
         background-image: url('https://cdn.pixabay.com/photo/2023/08/30/17/29/ai-generated-8223836_1280.jpg');
         background-position: center;
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -124,14 +128,67 @@
         border-radius: 12px;
         cursor: pointer;
     }
-    
-    footer{
-        height: 200px;
-        background-color: black;
+     .footer {
+  background-color: #0c0c0c;
+   background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: flex-start;
         display: flex;
-        align-items:center ;
-        justify-content: space-around;
-    }
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  color: #f9f6f6;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section li {
+  color: #fefcfc;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-section a {
+  color: #fefcfc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section input {
+  padding: 8px;
+  width: 70%;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer-section button {
+  background-color: #f4cba0;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}
 
 
 </style>
@@ -142,17 +199,16 @@
         </div>
 
         <div id="two">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Menu</a>
-            <a href="#">Blog</a>
-            <a href="#">About us</a>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="menu.html">Menu</a>
+            <a href="aboutus.html">About us</a>
             <img src="loupe.png" alt="" width="28px">
             <img src="shopping-cart.png" alt="" width="30px">
             <img src="menu-bar.png" alt="" width="30px">
         </div>
     </header>
-    <br>
+    
     <div id="first">
         
         <div style="display: flex; align-items: center; justify-content: first baseline; flex-direction: column;">
@@ -173,7 +229,7 @@
     <br><br>
     <div id="second">
         <h1 style="font-style: 50px;">Our Delicious Offer</h1>
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/landing-separator-1.png" alt="">
+        <img src="smallcoffeelogo.png" alt="" style="width: 50px;">
         <p style="font-size: 22px;">We offer coffee for all types of your mood</p>
     </div>
     <br><br>
@@ -208,7 +264,8 @@
         <div id="fourth">
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-attachment: fixed;">
         <h1 style="font-size: 50px; color:black;">The Coffee Herald</h1>
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png" alt="">
+         <img src="smallcoffeelogo.png" alt="" style="width: 50px;">
+
         <p style="font-size: 22px; color:white;">Don't sip the coffee only, sip the emotions</p>
     </div>
 
@@ -291,39 +348,48 @@
 </div>
 
 
-<footer>
-    <div>
-        <p style="font-size: 22px; color: white;">Built with ❤ By .....</p>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3 style="color: #f4cba0;">Our Address</h3>
+      <p>4821 Ridge Top Cir, Anchorage Street,<br> Alaska 99508, United States America.</p>
+      <p>
+        <a href="https://www.facebook.com" style="font-size: 15px;"><img src="facebook.png" alt="" width="20px">Facebook</a> <br>
+        <a href="https://x.com/" style="font-size: 15px;"> <img src="twitter.png" alt="" width="20px">Twitter</a><br>
+        <a href="https://www.instagram.com" style="font-size: 15px;"> <img src="instagram.png" alt="" width="20px">Instagram</a> 
+      </p>
     </div>
 
-    <div style="word-spacing: 30px;">
-        <a style="color: white;" href="#">Home</a>
-        <a style="color: white;" href="#">About</a> 
-        <a style="color: white;" href="#">Contact</a>
-        <a style="color: white;" href="#">Shop</a>
+    <div class="footer-section">
+      <h3 style="color: #f4cba0;">Connect With Us</h3>
+      <p><span>&#9993;</span> info@example.com</p>
+      <p><span>&#9993;</span> support@cofybrew.com</p>
+      <p><strong>09:00 AM – 08:00 PM</strong><br>Monday – Sunday</p>
     </div>
 
-    <div>
-        <a href="https://www.facebook.com" target="_blank">
-             <img src="facebook.png" width="40">
-        </a>
-
-        <a href="https://x.com/" target="_blank">
-            <img src="twitter.png" width="40">
-        </a>
-       
-        
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="instagram.png" width="40">
-        </a>
+    <div class="footer-section">
+      <h3 style="color: #f4cba0;">Our Services</h3>
+      <ul>
+        <li>-Barista Training</li>
+        <li>-Coffee Tasting Events</li>
+        <li>-Seasonal Special Coffee</li>
+        <li>-Coffee Subscriptions</li>
+        <li>-Coffee Catering</li>
+      </ul>
     </div>
+
+    <div class="footer-section">
+      <h3 style="color: #f4cba0;">Our Newsletter</h3>
+      <p>Introduce your subscribers to the latest coffee trend—the Coconut Water Americano, perfect summer drink.</p>
+      <input type="email" placeholder="Email Address">
+      <button>&#10148;</button>
+    </div>
+
+  </div>
+
 </footer>
-
-    <center>
-    <h2 style="color: #171717;">Designed by : <span style="color: #e0872f;">Adesh Pohare</span></h2>
-    <h2 style="color: darkred;">Thank You...</h2>
-    </center>
-
     
     
 </body>
